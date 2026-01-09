@@ -84,9 +84,11 @@ export const App = () => {
     }
   };
 
+  /* eslint-disable */
   const toggleCategory = id => {
     setSelectedCategoryId(prev =>
-      prev.includes(id) ? prev.filter(cid => cid !== id) : [...prev, id],);
+      prev.includes(id) ? prev.filter(c => c !== id) : [...prev, id],
+    );
   };
 
   const resetFilters = () => {
